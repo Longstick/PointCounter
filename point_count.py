@@ -207,4 +207,3 @@ if __name__ == "__main__":
     print ("=========================")
     print ("今天总共得分为：%d" % sumtotal)
 
-# test	
