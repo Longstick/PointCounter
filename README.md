@@ -1,2 +1,5 @@
 # PointCounter
-A pointcounter system for Doggy
+**This is a pointcounter system for Doggy🐶**
+
+### Love her, Code for her.
+
