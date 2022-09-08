@@ -69,13 +69,16 @@ class PointCounter(object):
         while True:
             learning_time_point = 0
             learning_time = float(input("今天学习了多久呢？："))
-            if learning_time <= 0:
+            if learning_time < 0:
                 print ("请输入正确的时长")
                 continue
             else:
-                if learning_time < 6:
-                    learning_time_point = 0
-                    print ("今天学习时长达到目标，请继续努力吧")
+                if learning_time < 4:
+                    learning_time_point = -20
+                    print ("今天学习时长太短啦！严厉批评！")
+                elif learning_time < 6:
+                    learning_time_point = -10
+                    print("今天学习时长不够哦，要扣分")
                 elif learning_time < 8:
                     learning_time_point = 10
                     print ("今天学习了很久哦，状态火热，棒！")
